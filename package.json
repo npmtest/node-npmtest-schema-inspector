@@ -1,1 +1,40 @@
-{     "devDependencies": {         "schema-inspector": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-schema-inspector",     "homepage": "https://github.com/npmtest/node-npmtest-schema-inspector",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-schema-inspector.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "test coverage for [schema-inspector (v1.6.8)](http://atinux.github.io/schema-inspector/) [![npm package](https://img.shields.io/npm/v/npmtest-schema-inspector.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-schema-inspector) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-schema-inspector.svg)](https://travis-ci.org/npmtest/node-npmtest-schema-inspector)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "schema-inspector": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-schema-inspector",
+    "keywords": [
+        "coverage",
+        "test",
+        "schema-inspector"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_schema_inspector.js",
+    "name": "npmtest-schema-inspector",
+    "nameAlias": "npmtest_schema_inspector",
+    "nameOriginal": "npmtest-schema-inspector",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-schema-inspector.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
