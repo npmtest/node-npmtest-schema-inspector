@@ -1,4 +1,7 @@
-# test coverage for  [schema-inspector (v1.6.8)](http://atinux.github.io/schema-inspector/)  [![npm package](https://img.shields.io/npm/v/npmtest-schema-inspector.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-schema-inspector) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-schema-inspector.svg)](https://travis-ci.org/npmtest/node-npmtest-schema-inspector)
+# npmtest-schema-inspector
+
+#### basic test coverage for  [schema-inspector (v1.6.8)](http://atinux.github.io/schema-inspector/)  [![npm package](https://img.shields.io/npm/v/npmtest-schema-inspector.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-schema-inspector) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-schema-inspector.svg)](https://travis-ci.org/npmtest/node-npmtest-schema-inspector)
+
 #### Schema-Inspector is a powerful tool to sanitize and validate JS objects.
 
 [![NPM](https://nodei.co/npm/schema-inspector.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/schema-inspector)
